@@ -1,6 +1,4 @@
-let appointments = [
-  
-]; // Armazenamento em memória para simplicidade
+let appointments = []; // Armazenamento em memória para simplicidade
 let currentId = 1;
 
 const addAppointment = (appointment) => {

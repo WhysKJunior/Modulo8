@@ -7,7 +7,7 @@ const updateBookRoute = require('./routes/updateBook');
 const deleteBookRoute = require('./routes/deleteBook');
 const searchBooksRoute = require('./routes/searchBooks');
 
-app.use(express.json()); // Middleware para lidar com JSON no corpo da requisição
+app.use(express.json()); 
 
 app.use('/', createBookRoute);
 app.use('/', getBooksRoute);

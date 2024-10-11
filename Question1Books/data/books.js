@@ -24,9 +24,9 @@ function searchBooks({ title, author, year, genre }) {
 }
 
 function updateBook(id, updatedBook) {
-  const index = books.findIndex(book => book.id === parseInt(id));
+  const index = books.findIndex((book) => book.id === parseInt(id));
   if (index !== -1) {
-    books[index] = { id : parseInt(id), ...updateBook}
+    books[index] = { id : parseInt(id), ...updatedBook}
     return books[index];
   }
   return null;
